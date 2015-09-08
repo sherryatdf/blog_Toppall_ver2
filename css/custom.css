@@ -1,0 +1,6 @@
+blockquote,
+blockquote a,
+blockquote strong {
+    font-size: 1em;
+    letter-spacing: 2px;
+}
