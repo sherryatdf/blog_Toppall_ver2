@@ -77,9 +77,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>  [工作篇] 大量資料表單搜尋</h1>
-                        <h2 class="subheading">欄位建立、特定條件資料篩選與加總</h2>
-                        <span class="meta">Posted by <a href="#">Sherry</a> on August 24, 2015</span>
+                        <h1>  [工作篇] 甘特圖製作</h1>
+                        <h2 class="subheading">專案時程管理、工作進度情況</h2>
+                        <span class="meta">Posted by <a href="#">Sherry</a> on August 18, 2015</span>
                     </div>
                 </div>
             </div>
@@ -91,60 +91,71 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在工作上，我們常常會收到大量的客戶資料，如：客戶姓名、註冊日期、購買時間、購買數量、會員編號等，這些上千、上萬筆的資料，如何做快速的搜尋、分類及統計，常常都是上班族會遇到的問題，就讓 Toppall 教您如何快速建立具價值的資訊表單。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 同時手上有太多專案不知道怎麼掌握個專案的進度？團隊成員很多，該如何管理專案時程？這時候，「甘特圖」絕對是您不可或缺絕佳工具！</p>
                     <p>&nbsp;※ 本篇可以讓您學到：<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 欄位資料名稱設定<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 計算表單中符合特定條件之資料「個數」<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 計算表單中符合特定條件之資料「總和」</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 長條圖建立<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 甘特圖建立<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 甘特圖座標軸設定與調整</p>
                     
-                    <h1 class="section-heading">  1. 資料設定  </h1>
-                        <h2>  &nbsp;&nbsp;1.1 資料輸入 </h2>
+                    <br>
+                    <h1 class="section-heading">  1. 資料建立  </h1>
+                       
                     
-                    <p>首先，先將表單之資料輸入，並為每欄資料命名。</p>
-                    
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_1.jpg" alt=""></center>
+                    <p>製作一個依序包含「工作名稱」、「開始日期」、「結束日期」的資料表格。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_1.png" alt=""></center>
                    
-                    <br> <br> <br>
-                    
-                        <h2>  1.2 欄位設定 </h2> 
-                            <h3> 方法一、定義名稱</h3>
-                                <p>將表單各欄位資料設定名稱，以便在公式中使用。<br>
-                                    至「公式」頁面，點選「定義名稱」之功能按鈕。</p>
-                    
-                    <center><img src="img/Toppall_ver2_blog1_2.jpg"></center>
+                                        
+                    <br>
+                    <p>對著C行以左鍵點選，選取C行後按右鍵，選擇「插入」。</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog2_2.png" alt=""></center>
                     
                     <br>
-                                <p>在「選取儲存格範圍」欄位點選該欄右方「表格圖示之按鈕<img src="img/%E8%A1%A8%E6%A0%BCicon.jpg">，選取欲定義之欄位，並「輸入資料範圍的名稱」(即該欄之項目名稱)，並於該欄最上方將定義名稱填入。 </p>
+                    <p>在表格上方輸入「天數」，並於C2格內輸入公式：「 =DAYS(D2,B2) 」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_3.png" alt=""></center>
                     
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_3.jpg" alt=""></center>
                     <br>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_4.jpg" alt=""></center>
+                    <p>按住C2右下角往下拉至表格底端，本例為拉至「 C8 」，將公式複製到「 C3 ~ C8 」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_4.png" alt=""></center>
                     
                     <br> <br> <br>
                     
-                    <h3> 方法二、從選取範圍建立</h3>                 
-                    <p>對第一行按下左鍵，選取第一行全部，並按右鍵，「插入」新的一行。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_5.jpg" alt=""></center>
+                     <h1 class="section-heading">  2. 圖表建立  </h1>
+                      <h2> 2.1 圖表製作 </h2> 
+                    
+                    <p>選取「A1 至 B8」資料範圍，至「插入」頁面點選「橫條圖」，選擇「立體堆疊橫條圖」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_5.png" alt=""></center>
+                    <br>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_6.png" alt=""></center>
                     
                     <br>
-                    <p>同時選取「欲建立之資料範圍」以及「該欄之第一行空白格」</p>
-                    <center><img  class="img-responsive" src="img/Toppall_ver2_blog1_6.jpg" alt=""></center>
+                    <p>將表格延伸：按住B8的右下角，將範圍往右拉至C8。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_7.png" alt=""></center>
                     
                     <br>
-                    <p>至「公式」頁面，點選「從選取範圍建立」之功能按鈕。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_7.jpg" alt=""></center>
+                    <p>對著藍色長條圖按一下，選擇「填滿」之欄位，選擇「無填滿」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_8.png" alt=""></center>
                     
-                    <br>
-                    <p>勾選「頂端列」，並於頂端列之儲存格輸入「欲建立之名稱」。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_8.jpg" alt=""></center>
+                    <br><br>
+                    <h2> 2.2 天數標示 </h2> 
+                    
+                    <p>對著橘色長條圖按一下左鍵，將所有橘色長條選取起來，點右鍵，選取「新增資料標籤」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_9.png" alt=""></center>
+                     <br>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog2_10.png" alt=""></center>
                     
                     
-                    <br><br><br>
+                    
+                    
+                    
+                    
+                    
+                    <br><br><br><br>
                     
 
 
-                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html">訂閱電子報</a>！</blockquote>
+                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html" style=color:blue> 訂閱電子報</a>！</blockquote>
 
+                        <br><br>
 
                 </div>
             </div>
