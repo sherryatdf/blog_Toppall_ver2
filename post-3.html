@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Toppall - Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Toppall</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="post.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>  [工作篇] 大量資料表單搜尋 Post-1</h1>
+                        <h2 class="subheading">欄位建立、特定條件資料篩選與加總</h2>
+                        <span class="meta">Posted by <a href="#">Sherry</a> on August 24, 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在工作上，我們常常會收到大量的客戶資料，如：客戶姓名、註冊日期、購買時間、購買數量、會員編號等，這些上千、上萬筆的資料，如何做快速的搜尋、分類及統計，常常都是上班族會遇到的問題，就讓 Toppall 教您如何快速建立具價值的資訊表單。</p>
+                    <p>&nbsp;※ 本篇可以讓您學到：<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 欄位資料名稱設定<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 計算表單中符合特定條件之資料「個數」<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 計算表單中符合特定條件之資料「總和」</p>
+                    
+                    <h1 class="section-heading">  1. 資料設定  </h1>
+                        <h2>  &nbsp;&nbsp;1.1 資料輸入 </h2>
+                    
+                    <p>首先，先將表單之資料輸入，並為每欄資料命名。</p>
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_1.jpg" alt=""></center>
+                   
+                    <br> <br> <br>
+                    
+                        <h2>  1.2 欄位設定 </h2> 
+                            <h3> 方法一、定義名稱</h3>
+                                <p>將表單各欄位資料設定名稱，以便在公式中使用。<br>
+                                    至「公式」頁面，點選「定義名稱」之功能按鈕。</p>
+                    
+                    <center><img src="img/Toppall_ver2_blog1_2.jpg"></center>
+                    
+                    <br>
+                                <p>在「選取儲存格範圍」欄位點選該欄右方「表格圖示之按鈕<img src="img/%E8%A1%A8%E6%A0%BCicon.jpg">，選取欲定義之欄位，並「輸入資料範圍的名稱」(即該欄之項目名稱)，並於該欄最上方將定義名稱填入。 </p>
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_3.jpg" alt=""></center>
+                    <br>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_4.jpg" alt=""></center>
+                    
+                    <br> <br> <br>
+                    
+                    <h3> 方法二、從選取範圍建立</h3>                 
+                    <p>對第一行按下左鍵，選取第一行全部，並按右鍵，「插入」新的一行。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_5.jpg" alt=""></center>
+                    
+                    <br>
+                    <p>同時選取「欲建立之資料範圍」以及「該欄之第一行空白格」</p>
+                    <center><img  class="img-responsive" src="img/Toppall_ver2_blog1_6.jpg" alt=""></center>
+                    
+                    <br>
+                    <p>至「公式」頁面，點選「從選取範圍建立」之功能按鈕。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_7.jpg" alt=""></center>
+                    
+                    <br>
+                    <p>勾選「頂端列」，並於頂端列之儲存格輸入「欲建立之名稱」。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_8.jpg" alt=""></center>
+                    
+                    
+                    <br><br><br>
+                    
+
+
+                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html">訂閱電子報</a>！</blockquote>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        
+                        <li>
+                            <a href="https://www.facebook.com/Toppall">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Toppall 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
