@@ -77,8 +77,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>  [工作篇] 大量資料表單搜尋 Post-1</h1>
-                        <h2 class="subheading">欄位建立、特定條件資料篩選與加總</h2>
+                        <h1>  [工作篇] 日常費用管理 </h1>
+                        <h2 class="subheading">部門預算清楚掌握，費用花在刀口上</h2>
                         <span class="meta">Posted by <a href="#">Sherry</a> on August 24, 2015</span>
                     </div>
                 </div>
@@ -91,60 +91,97 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在工作上，我們常常會收到大量的客戶資料，如：客戶姓名、註冊日期、購買時間、購買數量、會員編號等，這些上千、上萬筆的資料，如何做快速的搜尋、分類及統計，常常都是上班族會遇到的問題，就讓 Toppall 教您如何快速建立具價值的資訊表單。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 無論是個部門間的費用結算，或是日常雜支的支出情況，皆可以用Excel計算費用使用情況，並能夠更精確預估下個月的預算分配。</p>
                     <p>&nbsp;※ 本篇可以讓您學到：<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 欄位資料名稱設定<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 計算表單中符合特定條件之資料「個數」<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 計算表單中符合特定條件之資料「總和」</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 選填式表單設計<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 篩選表單內特定項目<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 分類計算表單數值總額 </p>
                     
-                    <h1 class="section-heading">  1. 資料設定  </h1>
-                        <h2>  &nbsp;&nbsp;1.1 資料輸入 </h2>
                     
-                    <p>首先，先將表單之資料輸入，並為每欄資料命名。</p>
+                    <h1 class="section-heading">  1. 表單建立  </h1>
+                        <h2>1.1 格式設定 </h2>
                     
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_1.jpg" alt=""></center>
-                   
+                    <p>首先，先將資料建立，並於最上欄建立一個表頭。<br>
+                        <br>
+                        先於第二行依序輸入「月份」、「日期」、「部門」、「費用別」、「金額」、「備註」等欄位。</p>
+                    
+                    <br> 
+                        <h3>  表格底色填滿 </h3> 
+                   <p>選取A2至F2的表格，按下「填滿色彩 <img src="img/%E5%A1%AB%E6%BB%BF%E8%89%B2%E5%BD%A9icon.png"> 」，選擇欲填滿之色彩。
+</p>
+                    <center><img src="img/Toppall_ver2_blog3_1.png"></center>
+                    
+                    <br><br>
+                    
+                    並於「字型色彩<img src="img/%E5%AD%97%E5%9E%8B%E8%89%B2%E5%BD%A9icon.png">」的按鈕處，選擇喜好的文字色彩。  <br> <br>
+                    <center><img src="img/Toppall_ver2_blog3_2.png"></center>
+                    
+                    <br> <br>
+                    
+                    <h3> 表頭建立 </h3> 
+                    <p>選取A1至F1的表格，按下「跨欄置中<img src="img/%E8%B7%A8%E6%AC%84%E7%BD%AE%E4%B8%ADicon.png">」鈕，即可合併儲存格，並輸入表頭「日常費用表」</p>
+                     <center><img src="img/Toppall_ver2_blog3_3.png"></center>
+                    
                     <br> <br> <br>
                     
-                        <h2>  1.2 欄位設定 </h2> 
-                            <h3> 方法一、定義名稱</h3>
-                                <p>將表單各欄位資料設定名稱，以便在公式中使用。<br>
-                                    至「公式」頁面，點選「定義名稱」之功能按鈕。</p>
+                     <h1 class="section-heading">  2. 資料驗證  </h1>
+                    <h2>2.1 設定資料驗證</h2>
+                    <p>選取C欄，點選「資料驗證<img src="img/%E8%B3%87%E6%96%99%E9%A9%97%E8%AD%89icon.png">」，於「設定」頁面的「允許」欄位選擇「清單」，並於「來源」欄位填入此類別表單的選項，並用「,」區隔不同類別。 </p>
                     
-                    <center><img src="img/Toppall_ver2_blog1_2.jpg"></center>
+                    <center><img src="img/Toppall_ver2_blog3_4.png"></center>
                     
-                    <br>
-                                <p>在「選取儲存格範圍」欄位點選該欄右方「表格圖示之按鈕<img src="img/%E8%A1%A8%E6%A0%BCicon.jpg">，選取欲定義之欄位，並「輸入資料範圍的名稱」(即該欄之項目名稱)，並於該欄最上方將定義名稱填入。 </p>
+                    <br> <br> <br> 
                     
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_3.jpg" alt=""></center>
-                    <br>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_4.jpg" alt=""></center>
+                     <h2>2.2 設定提示訊息</h2>
+                    <p>設定填寫表格時會出現的提示訊息。（如下方第二張圖黃色方框之內容）</p>
                     
-                    <br> <br> <br>
+                    <center><img src="img/Toppall_ver2_blog3_5.png"></center>
+                     
+                    <br> <br> 
                     
-                    <h3> 方法二、從選取範圍建立</h3>                 
-                    <p>對第一行按下左鍵，選取第一行全部，並按右鍵，「插入」新的一行。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_5.jpg" alt=""></center>
+                    <center><img src="img/Toppall_ver2_blog3_6.png"></center>
+                     
+                    <br> <br> <br> 
+                     
+                    <h2>2.3 設定錯誤提醒</h2>
+                    <p>設定若有人於表單填寫時，填寫錯誤值時跳出的提醒內容。</p>
                     
-                    <br>
-                    <p>同時選取「欲建立之資料範圍」以及「該欄之第一行空白格」</p>
-                    <center><img  class="img-responsive" src="img/Toppall_ver2_blog1_6.jpg" alt=""></center>
+                    <center><img src="img/Toppall_ver2_blog3_7.png"></center>
                     
-                    <br>
-                    <p>至「公式」頁面，點選「從選取範圍建立」之功能按鈕。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_7.jpg" alt=""></center>
+                    <br> <br> <br> 
+                     
+                    <h2>2.4 費用別欄位設定</h2>
+                    <p>費用別「資料驗證」之下拉式選項設定同上。</p>
                     
-                    <br>
-                    <p>勾選「頂端列」，並於頂端列之儲存格輸入「欲建立之名稱」。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_8.jpg" alt=""></center>
+                    <br><br><br><br>
+
+                    <h1 class="section-heading">  3. 表單內資料篩選  </h1>
                     
+                    <p>篩選出不同部門、不同費用類別的支出情況。</p>
+                    <h2>3.1 篩選</h2>
                     
+                    <p>首先，選取A2至F2的欄位，至「常用」頁面選擇「排序與篩選」，並勾選「篩選」。</p>
+                    
+                     <center><img src="img/Toppall_ver2_blog3_8.png"></center>
+                     <br> <br> 
+                     <center><img src="img/Toppall_ver2_blog3_9.png"></center>
+                    <br> <br> 
+                    <p>點開各欄位右方的箭頭，篩選之方式又分為「勾選篩選」、「數值篩選」及「關鍵字篩選」等。</p>
+                     
+                     <center><img src="img/Toppall_ver2_blog3_10.png"></center>
+                    
+                    <br> <br><br> 
+                    
+                    <h3>勾選篩選</h3>
+                    
+                    <p>可透過「勾選」或「取消勾選」，篩選下方的欄位之資料。例如：勾選「行銷部」，則所有「行銷部」的費用資料將會被篩選出來。</p>
+                    
+                    <center><img src="img/Toppall_ver2_blog3_11.png"></center>
+                           
                     <br><br><br>
-                    
-
-
-                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html">訂閱電子報</a>！</blockquote>
-
+            
+                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html" style="color:blue">訂閱電子報</a>！</blockquote>
+<br>
 
                 </div>
             </div>
