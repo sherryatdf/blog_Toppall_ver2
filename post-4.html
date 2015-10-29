@@ -80,14 +80,12 @@
                         
                         
                         
+                   
                         
                         
-                        
-                        
-                        
-                        <h1>  [工作篇] 分析圖表繪製</h1>
-                        <h2 class="subheading">繪製圓餅圖、折線圖及長條圖等</h2>
-                        <span class="meta">Posted by <a href="#">Sherry</a> on August 24, 2015</span>
+                        <h1>  [工作篇]搜尋比對及驗證</h1>
+                        <h2 class="subheading"> 資料搜尋比對及驗證整合技巧</h2>
+                        <span class="meta">Posted by <a href="#">Irene</a> on September 21, 2015</span>
                     </div>
                 </div>
             </div>
@@ -99,60 +97,123 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在工作上，我們常常會收到大量的客戶資料，如：客戶姓名、註冊日期、購買時間、購買數量、會員編號等，這些上千、上萬筆的資料，如何做快速的搜尋、分類及統計，常常都是上班族會遇到的問題，就讓 Toppall 教您如何快速建立具價值的資訊表單。</p>
-                    <p>&nbsp;※ 本篇可以讓您學到：<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(1) 欄位資料名稱設定<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(2) 計算表單中符合特定條件之資料「個數」<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;(3) 計算表單中符合特定條件之資料「總和」</p>
                     
-                    <h1 class="section-heading">  1. 資料設定  </h1>
-                        <h2>  &nbsp;&nbsp;1.1 資料輸入 </h2>
                     
-                    <p>首先，先將表單之資料輸入，並為每欄資料命名。</p>
                     
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_1.jpg" alt=""></center>
-                   
-                    <br> <br> <br>
                     
-                        <h2>  1.2 欄位設定 </h2> 
-                            <h3> 方法一、定義名稱</h3>
-                                <p>將表單各欄位資料設定名稱，以便在公式中使用。<br>
-                                    至「公式」頁面，點選「定義名稱」之功能按鈕。</p>
+                     <h1 class="section-heading">  1. 情境說明
+  </h1>
                     
-                    <center><img src="img/Toppall_ver2_blog1_2.jpg"></center>
+                    <p>以下為Dynaflare大學裡一到四年級學生的戶籍地分布統計表，主要分布有北部、中部、南部、東部、離島以及其他。學校想要<strong><a style="color:red">建立一個表格，可以快速查詢不同年級、不同戶籍地的比重來源</a></strong>；資料少的話，或許我們可以單純用萬能的雙手及敏銳的眼睛進行查看，但若資料量多，比較複雜的話，該怎麼處理呢？ 
+</p>
+    <br><br>
+                    
+       <h1 class="section-heading"> 2. 開啟表單 </h1>             
+                    
+                    <p>若遇到類似需要比對及快速搜尋的工作，首先，請開啟必須要資料比對的檔案。在此就用上述戶籍地分布統計表作為範例。從表中我們可以看到，包含了年級、戶籍地以及比重。
+
+</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_1.png" alt=""></center>
+                    
+                   <center><p>圖1: 戶籍地分布統計表</p></center>
+                    <p>由於時間有限，我們需要快速建立查詢表單，因此我們會用到excel三功能來協助進行。</p>
+                    
+                    <br><br>
+                      <h1 class="section-heading"> 3. 先建立快速查詢表格
+ </h1>             <h2>3.1 輸入文字</h2>
+                    
+                    <p>請在空白輸入「年級」、「戶籍地」、「比重」，如下圖所示。</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_2.png" alt=""></center>
+                    
+                   <center><p>圖2: 建立快速查詢表格的文字</p></center>
+                  
+                    <br><br>
+                    
+                     <h1 class="section-heading"> 4. 定義矩陣名稱 </h1>             <h2>4.1 定義名稱簡介</h2>
+                    
+                    <p>我們可以為儲存格範圍、函數、常數或表格定義名稱，一旦採取在活頁簿中使用名稱的做法以後，就可以輕鬆更新、稽核及管理這些名稱。簡而言之，定義名稱，讓公式更容易了解及維護，也方便我們後續函數的使用與進行。</p>
+                    <br>
+                    <h2>4.2 定義名稱操作方式</h2>
+                    <h3>4.2.1 開啟定義名稱視窗</h3>
+                    <p>請點「公式」功能內的「定義名稱」，會出現以下視窗。
+</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_3.png" alt=""></center>
+                    
+                   <center><p>圖3: 點選定義名稱</p></center>
+                    <br>
+                     <h3>4.2.2 定義矩陣範圍名稱</h3>
+                    <p>由於我們要將每一矩陣的資料都定義好名稱，方便後續的資料搜尋比對。請先在「輸入資料範圍的名稱」內填上「一年級」，接著在「選取儲存格範圍」選取B11至C17，選取完會出現「=Dynaflare大學學生戶籍地分布表!$B$11:$C$17」，再來請按左下方的「+」號，即完成。<br>
+	我們的資料還有二到四年級，因此後續的資料同樣以此類推；每一筆資料選取儲存格範圍後，記得要按左下方的「+」號喔！<br>
+請自己先練習看看，完成後再看以下的答案，看自己是否都答對呢？</p>
+                    
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_3.5.png" alt=""></center>
+                    
+                    <p>輸入完後，如下圖所示，確定無誤後，請按「確定」。</p>
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_4.png" alt=""></center>
+                    
+                   <center><p>圖4: 定義名稱</p></center>
+                    <br><br><br><br>
+                    <h1>5. 使用驗證功能製作下拉式選單</h1>
+                     <h2>5.1 驗證功能簡介</h2>
+                    <p>由於我們需要能夠快速查詢出不同年級，不同戶籍地所對應的比重，每次查詢都要重新數入一次文字，實在太麻煩了。因此，我們可以運用驗證功能，建立下拉式選單，以選取的方式，選擇想要查詢的年級及戶籍地，會方便許多唷！
+</p>
                     
                     <br>
-                                <p>在「選取儲存格範圍」欄位點選該欄右方「表格圖示之按鈕<img src="img/%E8%A1%A8%E6%A0%BCicon.jpg">，選取欲定義之欄位，並「輸入資料範圍的名稱」(即該欄之項目名稱)，並於該欄最上方將定義名稱填入。 </p>
+                    <h2>5.2 驗證功能設定
+</h2>
+                    <h3>5.2.1 設定「年級」的下拉式選單</h3>
+                    <p>請點選C2欄位，再點「資料」功能內的「資料驗證」。</p>
                     
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_3.jpg" alt=""></center>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog4_5.png" alt=""></center>
+                    
+                   <center><p>圖5: 「資料」功能內的「資料驗證」
+</p></center>
                     <br>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_4.jpg" alt=""></center>
+                    <p>將「允許」的地方，從「任一值」改為「清單」。接著在「來源」的地方，打上「一年級,二年級,三年級,四年級」後，請按「確定」。</p>
                     
-                    <br> <br> <br>
                     
-                    <h3> 方法二、從選取範圍建立</h3>                 
-                    <p>對第一行按下左鍵，選取第一行全部，並按右鍵，「插入」新的一行。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_5.jpg" alt=""></center>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog4_6.png" alt=""></center>
                     
+                   <center><p>圖6: 更改資料驗證準則</p></center>
                     <br>
-                    <p>同時選取「欲建立之資料範圍」以及「該欄之第一行空白格」</p>
-                    <center><img  class="img-responsive" src="img/Toppall_ver2_blog1_6.jpg" alt=""></center>
+                    <h3>5.2.2 設定「戶籍地」的下拉式選單
+</h3>
+                    <p>仿照5.2.1的設定方法，請點選C3欄位，再點「資料」功能內的「資料驗證」。接著更改驗證準則，改為「清單」，來源處打上「北部、中部、南部、東部、離島、其他」(或是直接選擇B12:B17，也就是變成「=$B$12:$B$17」也可以)，接著按下「確定」。</p>
                     
-                    <br>
-                    <p>至「公式」頁面，點選「從選取範圍建立」之功能按鈕。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_7.jpg" alt=""></center>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog4_7.png" alt=""></center>
                     
+                   <center><p>圖7: 更改資料驗證準則</p></center><br>
+                    <p>設定好的下拉式選單如下圖所示，是不是非常方便呢？
+</p>
+
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog4_8.png" alt=""></center>
+                    
+                   <center><p>圖8：下拉式選單完成圖示</p></center>
+                    
+                    <br><br><br>
+                     <h1>6. 資料搜尋比對</h1>
+                     <h2>6.1 VLOOKUP以及INDIRECT函數簡介</h2>
+                    <p>我們將原始資料定義了名稱，也設定好了利於我們進行搜尋的年級、戶籍地下拉式表單，最後一步就是最最重要的，針對我們想搜尋的年級、戶籍地，自動顯示出相對應的比重。<br>
+這時候就需要VLOOKUP函數來幫忙啦！VLOOKUP函數詳細的使用規則以及其他案例應用請持續訂閱我們的電子報，我們會持續提供實用的知識給您。<br>
+在VLOOKUP函數值中，我們還需要代入INDIRECT函數。INDIRECT函數是指傳回一文字串所指定的參照位址，該參照位址內容會被立刻計算並顯示出來。或許有點抽象，我們以下直接帶本案例來實際說明及應用。
+</p>
                     <br>
-                    <p>勾選「頂端列」，並於頂端列之儲存格輸入「欲建立之名稱」。</p>
-                    <center><img class="img-responsive" src="img/Toppall_ver2_blog1_8.jpg" alt=""></center>
+                    <h2>6.2 輸入VLOOKUP函數
+</h2>
+                    
+                    
+                    
+                    
                     
                     
                     <br><br><br>
                     
 
-
-                    <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html">訂閱電子報</a>！</blockquote>
-
+   <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html" style="color:blue"> 訂閱電子報</a>！</blockquote>
+               
 
                 </div>
             </div>

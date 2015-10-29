@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Toppall - Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Toppall</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="post-1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <h1>  [工作篇]資料比對及數量計算
+</h1>
+                        <h2 class="subheading">大量資料尋找比對及數量計算整合技巧</h2>
+                        <span class="meta">Posted by <a href="#">Irene</a> on October 17, 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在工作上，若遇到上司請你進行資料比對分析及整理，或許想說我可以用萬能的雙手及敏銳的眼睛進行比對；資料量少的話，這招還行得通，但若是資料有500筆，1000筆，甚至是10000筆呢？不就會頭昏腦脹，眼花撩亂嗎？<br>
+因此，我們可以善用excel的函數功能來幫助我們輕鬆做比對！我們將以
+生活化案例來介紹與教導，希望能幫助各位更實際了解excel函數如何應用。不只公司人員，連學生都可以能活用本功能在實習或是社團文書處理上唷，一起來看看！
+</p>
+                  
+                    
+                    
+                    <h1 class="section-heading">  1. 情境說明
+  </h1>
+                    
+                    <p>以下為一份員工考績表。老闆決定針對不同的考績，給予不同的獎品；但是他太忙了，沒時間去做這項工作，因此請你幫忙。所以他又再給了一份「考績與獎品對照表」，請你將每位員工該得到的“獎品項目”放入總表，接著統計到底分別需要準備多少獎品。
+</p>
+                    <br> <br>
+    
+       <h1 class="section-heading"> 2.開啟或建立表單 </h1>             
+                    
+                    <p>若遇到類似需要比對的事情該如何處理呢？首先，請開啟必須要資料比對的檔案。在此就用上述的員工考績表作為範例。從「總表」中我們可以看到，包含了姓名、部門、性別、考績；以及「考績與獎品對照表」，包含了各績效所對應的獎品項目。
+</p>
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog5_1.png" alt=""></center>
+                    
+                   <center><p>圖1:總表</p></center><br>
+                    
+                    
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_2.png" alt=""></center>
+                    
+                    
+                    
+                   
+                    <center><p>圖2: 考績與獎品對照表</p></center><br>
+                    
+                    <p>由於時間有限，我們不可能逐筆手動填入，因此我們主要會用到excel三大功能來協助進行。</p>
+                     <br> <br>
+                    <h1 class="section-heading"> 3.垂直搜尋比對函數使用方式
+ </h1>             
+                    <h2> 3.1 函數介紹</h2> 
+                    <p>首先是 VLOOKUP 函數。VLOOKUP的V代表vertical(垂直的)，lookup代表尋找，因此代表「垂直搜尋比對」，用來尋找與您的查閱值完全相同的值。<br>
+VLOOKUP函數使用規則是=VLOOKUP(希望和參照表格比對的條件值, 查閱資料中的表格，查閱資料表格中第幾欄是結果欄，完全相符或近似的資料值)，以下將說明更詳細的使用方法。</p>
+                     <br>
+                    <h2> 3.2 輸入橫列文字</h2> 
+                    <p>	首先，請點到最上方，填入「獎品」。</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_3.png" alt=""></center>
+                    <center><p>圖3: 輸入橫列文字</p></center>
+                     <br>
+                    <h2> 3.3 輸入 VLOOKUP 函數</h2> 
+                    <p>	請於「E2欄」填入函數「=VLOOKUP」，會出現以下訊息(lookup_value, table_array, col_index_num, [range_lookup])</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_4.png" alt=""></center>
+                    <center><p>圖4: 輸入 VLOOKUP 函數</p></center>
+                     <br>
+                    <h3> 3.3.1 函數中第一項：lookup_value說明</h3>
+                    
+                    <p>lookup_value意思是「希望和參照表格比對的條件值」。由於我們要經由考績，去對應獎品是什麼，因此條件值就是考績，所以我們輸入「D2」，接著加上「小寫逗點」。
+</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_5.png" alt=""></center>
+                    <center><p>圖5: 輸入函數中的第一項</p></center> <br>
+                     <br>
+                     <h3> 3.3.2 函數中第二項：table_array說明</h3>
+                    
+                    <p>table_array：意思就是「參照表格在哪裡範圍有多大」。我們的參照表格就是老闆給我們的「考績與獎品對照表」。因此，我們將該表格全選起來，也就是「考績與獎品對照表!A:B」；接著再加上「小寫逗點」。</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_6.png" alt=""></center>
+                    <center><p>圖6: 輸入函數中的第二項</p></center> <br>
+                    <p>但是要特別注意的是，選取完資料後，我們必須把該資料變成「絕對位置」，才能讓回傳的資料都是正確的。絕對位置的使用方法：windows電腦，請按「F4」；mac電腦，請按「command+T」。出現「考績與獎品對照表!$A:$B」，才代表我們成功設定了絕對位置。
+</p>
+                       <center><img class="img-responsive" src="img/Toppall_ver2_blog5_7.png" alt=""></center>
+                    <center><p>圖7: 改成絕對位置</p></center> <br>
+                    
+                    
+                    <h3>3.3.3 函數中第三項：col_index_num說明</h3>
+                    
+                    <p>col_index_num：意思是「要找的資料是在參照表格的哪一欄」。由於我們要得知獎品有哪些，在表格中我們得知獎品在第二欄，因此我們輸入「2」；接著再加上「小寫逗點」。
+</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_8.png" alt=""></center>
+                    <center><p>圖8: 由於贈品位於B欄，也就是等於第二欄，因此輸入2
+</p></center> <br>
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog5_9.png" alt=""></center>
+                    <center><p>圖9: 輸入函數中的第三項</p></center> <br>
+                    
+                    
+                    <h3>3.3.4 函數中第四項：range_lookup說明
+</h3>
+                          <p>range_lookup：代表要尋找完全符合還是大約符合的值。0代表完全符合，1代表大約符合；我們需要精確，所以請輸入「0」。在0的後面加上「括號」，按下enter後，我們要的答案就出現了！</p>
+                     <center><img class="img-responsive" src="img/Toppall_ver2_blog5_10.png" alt=""></center>
+                    <center><p>圖10: 輸入函數中的第四項</p></center> <br>
+                    
+                    <center><img class="img-responsive" src="img/Toppall_ver2_blog5_11.png" alt=""></center>
+                    <center><p>圖11: 函數結果（未完成）</p></center> <br>
+                    
+                    <strong><p>>> 複習時間：本題案例之垂直搜尋比對函數=VLOOKUP(D2,考績與獎品對照表!$A:$B,2,0) </p></strong>
+                    
+                    <p>接著您可能會想，只出現一個值而已，後面還有好幾百筆的數字，該如何處理呢？其實非常簡單，我們只要將游標移至「E2的右下角」，出現「十字游標」後「按兩下」，所有的對應值也都完成囉！</p>
+         <center><img class="img-responsive" src="img/Toppall_ver2_blog5_12.png" alt=""></center>
+                    <center><p>圖12: 函數完成</p></center> <br>
+                               
+                    
+                    <h1 class="section-heading"> 4.統計函數使用方式  </h1>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <br><br><br>
+                    
+
+   <blockquote> 此篇為<strong>部分內容預覽</strong>，欲取得全文內容請<a href="contact.html" style="color:blue"> 訂閱電子報</a>！</blockquote>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        
+                        <li>
+                            <a href="https://www.facebook.com/Toppall">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Toppall 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
